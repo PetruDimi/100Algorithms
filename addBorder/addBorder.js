@@ -1,7 +1,9 @@
 function addBorder(...picture) {
-  let border = "*".repeat(picture[0]+2)
+  let border = "*".repeat(picture[0].length + 2);
+  console.log(border);
+  const itemsSideWall = picture.map((value) => "*" + value + "*");
 
-  return [border, ...picture.map(value => "*" + value + "*"), border];
+  return [border, ...itemsSideWall, border];
 }
 
-console.log(addBorder("add", "abc"));
+console.log(addBorder("adds", "abcj"));

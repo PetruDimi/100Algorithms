@@ -12,4 +12,4 @@ const allLongestStrings = inputArr => {
   return longestWords;
 };
 
-console.log(allLongestStrings(["abc", "bbbb", "nine", "ddddd"]));
+console.log(allLongestStrings(["abc", "bbbb", "nine", "ddddd", 'ddddd', 'cvcvk']));
